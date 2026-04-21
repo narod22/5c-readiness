@@ -63,6 +63,7 @@
       font-variation-settings: "opsz" 144, "SOFT" 30;
       letter-spacing: -0.022em;
       line-height: 1.02;
+      text-wrap: balance;
     }
     .display-section {
       font-family: 'Fraunces', ui-serif, Georgia, serif;
@@ -70,6 +71,11 @@
       font-variation-settings: "opsz" 80;
       letter-spacing: -0.018em;
       line-height: 1.08;
+      text-wrap: balance;
+    }
+    /* Prevent orphan words in body-copy subheads */
+    .balance-wrap {
+      text-wrap: balance;
     }
 
     /* Buttons */
@@ -222,8 +228,8 @@
         <h1 class="display-hero text-forest text-5xl sm:text-6xl md:text-7xl fade-up font-semibold">
           Before you spend $150,000 to franchise, spend 10 minutes on this.
         </h1>
-        <p class="mt-8 text-lg md:text-xl text-charcoal leading-relaxed max-w-2xl fade-up-2">
-          By the end of your coffee, you'll know whether to <span class="text-forest font-semibold">build it</span>, <span class="text-forest font-semibold">wait on it</span>, or <span class="text-forest font-semibold">walk away</span>.
+        <p class="mt-8 text-lg md:text-xl text-charcoal leading-relaxed max-w-2xl fade-up-2 balance-wrap">
+          By the end of your coffee, you'll know whether to <span class="text-forest font-semibold">build it</span>, <span class="text-forest font-semibold">wait on it</span>, or <span class="text-forest font-semibold">walk&nbsp;away</span>.
         </p>
 
         <form class="mt-10 max-w-xl fade-up-3" onsubmit="event.preventDefault(); document.getElementById('how-it-works').scrollIntoView({behavior:'smooth'});">
